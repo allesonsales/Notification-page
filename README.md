@@ -30,7 +30,7 @@ Click and change the status of unread notifications, as well as change the count
 
 ### Links
 
-- [Live site](https://allesonsales.github.io/notification-page/)
+- [Live site](https://allesonsales.github.io/Notification-page/)
 
 ## My process
 
