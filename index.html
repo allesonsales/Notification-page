@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+</head>
+<body>
+  <main>
+    <header class="notifications__header">
+      <div class="notifications__text">
+        <h1>Notifications</h1>
+        <span class="notifications__number" id="unreadnumber" aria-label="3 new notifications">3</span>
+      </div>
+      
+      <button type="button" aria-label="Mark all notifications as read" id="markall">Mark all as read</button>
+    </header>
+
+    <section class="notifications">
+      <article class="notification__container unread">
+        <img src="./assets/images/avatar-mark-webber.webp" alt="Mark Webber's avatar">
+        <div class="notification">
+          <p>
+            <strong>Mark Webber</strong> reacted to your recent post 
+            <b class="activity">My first tournament today!</b>
+          </p>
+          <time class="notification__date">1m ago</time>
+        </div>
+      </article>
+
+      <article class="notification__container unread">
+        <img src="./assets/images/avatar-angela-gray.webp" alt="Angela Gray's avatar">
+        <div class="notification">
+          <p>
+            <strong>Angela Gray</strong> followed you.
+          </p>
+          <time class="notification__date">5m ago</time>
+        </div>
+      </article>
+
+      <article class="notification__container unread">
+        <img src="./assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson's avatar">
+        <div class="notification">
+          <p>
+            <strong>Jacob Thompson</strong> has joined your group 
+            <a href="#" class="chess_club">Chess Club</a>.
+          </p>
+          <time class="notification__date">1 day ago</time>
+        </div>
+      </article>
+
+      <article class="notification__container unread">
+        <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasanuddin's avatar">
+        <div class="notification">
+          <p>
+            <strong>Rizky Hasanuddin</strong> sent you a private message.
+          </p>
+          <time class="notification__date">5 days ago</time>
+          <aside class="notification__message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </aside>
+        </div>
+      </article>
+
+      <article class="notification__container unread">
+        <img src="./assets/images/avatar-kimberly-smith.webp" alt="Kimberly Smith's avatar">
+        <div class="notification">
+          <div class="notification__picture">
+          <p>
+            <strong>Kimberly Smith</strong> commented on your picture.
+          </p>
+          <img src="./assets/images/image-chess.webp" class="chess_img" alt="chess" />
+        </div>
+          <time class="notification__date">1 week ago</time>
+        </div>
+      </article>
+
+      <article class="notification__container unread">
+        <img src="./assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson's avatar">
+        <div class="notification">
+          <p>
+            <strong>Nathan Peterson</strong> reacted to your recent post 
+            <b class="activity">5 end-game strategies to increase your win rate</a>.
+          </p>
+          <time class="notification__date">2 weeks ago</time>
+        </div>
+      </article>
+
+      <article class="notification__container unread">
+        <img src="./assets/images/avatar-anna-kim.webp" alt="Anna Kim's avatar">
+        <div class="notification">
+          <p>
+            <strong>Anna Kim</strong> left the group 
+            <a href="#" class="chess_club">Chess Club</a>.
+          </p>
+          <time class="notification__date" datetime="P14D">2 weeks ago</time>
+        </div>
+      </article>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>. 
+    Coded by <a href="#">Alleson Sales</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

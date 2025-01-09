@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Plus Jakarta Sans", serif;
+}
+
+:root {
+    --blue:hsl(219, 85%, 26%);
+    --red:hsl(1, 90%, 64%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+    padding: 2rem;
+    background-color: var(--Very-light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--White);
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+
+
+.notifications__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.notifications__text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.notifications__text span {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.notifications__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    color: var(--White);
+    background-color: var(--blue);
+    border-radius: .5rem;
+}
+
+#markall {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+#markall:hover {
+    color: var(--blue);
+}
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.notification__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--Very-light-grayish-blue);
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.notification__container img {
+    height: 2.5rem;
+}
+
+.notification {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.notification__container .notification p {
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+}
+
+.notification__container .notification p strong {
+    font-weight: 800;
+    color: var(--Very-dark-blue);
+}
+
+.activity {
+    font-weight: 600;
+    color: var(--Very-dark-blue); ;
+}
+.notification__date {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--Grayish-blue);
+}
+
+.notification__content {
+    display: flex;
+}
+
+.notification__message {
+    padding: .8rem;
+    border: solid 1px var(--Light-grayish-blue-2);
+}
+
+.notification__picture {
+    display: flex;
+}
+
+
+.unread {
+    background-color: var(--Light-grayish-blue-1);
+}
+
+.unread p:first-of-type::after {
+    content: " ";
+    background-color: var(--red);
+    width: .5rem;
+    height: .5rem;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+.chess_club {
+    font-weight: 800;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
